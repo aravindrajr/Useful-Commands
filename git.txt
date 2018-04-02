@@ -1,0 +1,39 @@
+# sets up Git with your name
+git config --global user.name "<Your-Full-Name>"
+
+# sets up Git with your email
+git config --global user.email "<your-email-address>"
+
+# makes sure that Git output is colored
+git config --global color.ui auto
+
+# displays the original state in a conflict
+git config --global merge.conflictstyle diff3
+
+# list config details
+git config --list
+
+# show status of the current working directory
+git status
+
+#Undo local changes
+git checkout -- <filename>
+	[OR]
+git fetch origin
+git reset --hard origin/master
+
+# Tags
+git tag 1.0.0 <commitID>
+
+#Add files
+git add <filename>
+git add *
+
+#Commit
+git commit -m "Commit message"
+
+#push
+git push origin master
+
+#Connect to a remote repository
+git remote add <name> <server>
